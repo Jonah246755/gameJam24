@@ -1,3 +1,53 @@
-[gd_scene format=3 uid="uid://jbh12tlt0s6p"]
+[gd_scene load_steps=3 format=3 uid="uid://bemsfe8b7kbnf"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_kfx7h"]
+[ext_resource type="Texture2D" uid="uid://c76yccmqiwwk0" path="res://Yellow.png" id="2_pfita"]
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kfx7h")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("2_pfita")
+stretch_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 224.0
+offset_right = 927.0
+offset_bottom = 522.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "play current level"
+
+[node name="level select" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "select level"
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "settings
+"
+
+[node name="resume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "resume"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/level select" to="." method="_on_level_select_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
