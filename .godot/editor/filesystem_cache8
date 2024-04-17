@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713340838
-Brown.png::CompressedTexture2D::7054744330291640973::1713268736::1713268736::1::::<><>::
-icon.svg::CompressedTexture2D::648322551932794696::1713268208::1713268213::1::::<><>::
-Jump (32x32).png::CompressedTexture2D::8581543549608309070::1713276437::1713276442::1::::<><>::
-main.tscn::PackedScene::1518223476110336251::1713279283::0::1::::<><>::uid://c7rmuxk5wnru0::::res://Brown.png<>uid://dvu1q1f3t3svj::::res://Terrain (16x16).png<>uid://dk3tn71wknoxv::::res://scenes/main_character.tscn
-Terrain (16x16).png::CompressedTexture2D::8676123911703415275::1713269067::1713269068::1::::<><>::
-::res://scenes/::1713279229
-main_character.gd::GDScript::-1::1713278446::0::1::::<>CharacterBody2D<>::
-main_character.tscn::PackedScene::7920131624682217251::1713279229::0::1::::<><>::uid://dui71empj55dq::::res://Jump (32x32).png<>res://scenes/main_character.gd
+::res://::1713344300
+Brown.png::CompressedTexture2D::7054744330291640973::1713343928::1713343928::1::::<><>::
+icon.svg::CompressedTexture2D::648322551932794696::1713343928::1713344013::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::8581543549608309070::1713343928::1713343928::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::8676123911703415275::1713343928::1713343928::1::::<><>::
+::res://scenes/::1713344300
+main.tscn::PackedScene::1518223476110336251::1713344150::0::1::::<><>::uid://c7rmuxk5wnru0::::res://Brown.png<>uid://dvu1q1f3t3svj::::res://Terrain (16x16).png<>uid://dk3tn71wknoxv::::res://scenes/main_character.tscn
+main_character.gd::GDScript::-1::1713344140::0::1::::<>CharacterBody2D<>::
+main_character.tscn::PackedScene::7920131624682217251::1713344150::0::1::::<><>::uid://dui71empj55dq::::res://Jump (32x32).png<>res://scenes/main_character.gd
+menu.tscn::PackedScene::634236868095166093::1713344297::0::1::::<><>::
