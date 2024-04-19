@@ -1,0 +1,10 @@
+res://scenes/level1.tscn
+res://menu.gd
+res://menu.tscn
+res://scenes/menu.tscn
+res://scenes/levelmenu.gd
+res://scenes/levelmenu.tscn
+res://scenes/menu.gd
+res://scenes/settings.tscn
+res://scenes/Button.gd
+res://scenes/settings.gd
