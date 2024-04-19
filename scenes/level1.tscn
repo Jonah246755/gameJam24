@@ -540,5 +540,3 @@ layer_0/tile_data = PackedInt32Array(589817, 393216, 4, 589818, 458752, 4, 58981
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_wnlhq")]
 position = Vector2(-419, 243)
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
