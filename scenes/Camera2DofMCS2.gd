@@ -1,6 +1,6 @@
 extends Camera2D
 
-func _process(delta):
+func _process(_delta):
 	# Get the visible rectangle of the viewport
 	var viewport_rect = get_viewport_rect()
 
