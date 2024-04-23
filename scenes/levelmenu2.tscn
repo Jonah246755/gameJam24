@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8jtsx7ajk67y"]
+
+[ext_resource type="Script" path="res://scenes/levelmenu2.gd" id="1_li75t"]
+[ext_resource type="Texture2D" uid="uid://daf35c8ypdngh" path="res://assets/Brown.png" id="1_y2bb2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_li75t")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_y2bb2")
+stretch_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 45.0
+offset_right = 956.0
+offset_bottom = 152.0
+
+[node name="backMenu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "back to menu"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 171.0
+offset_right = 358.0
+offset_bottom = 279.0
+
+[node name="level 1" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+text = "level 1"
+
+[node name="VBoxContainer5" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 168.0
+offset_right = 645.0
+offset_bottom = 262.0
+
+[node name="level 2" type="Button" parent="VBoxContainer5"]
+layout_mode = 2
+text = "level 2"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 810.0
+offset_top = 167.0
+offset_right = 957.0
+offset_bottom = 252.0
+
+[node name="level 3" type="Button" parent="VBoxContainer4"]
+layout_mode = 2
+text = "level 3"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 414.0
+offset_right = 365.0
+offset_bottom = 516.0
+
+[node name="level 4" type="Button" parent="VBoxContainer3"]
+layout_mode = 2
+text = "level 4"
+
+[node name="VBoxContainer7" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 512.0
+offset_top = 420.0
+offset_right = 641.0
+offset_bottom = 486.0
+
+[node name="level 5" type="Button" parent="VBoxContainer7"]
+layout_mode = 2
+text = "level 5"
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 808.0
+offset_top = 416.0
+offset_right = 958.0
+offset_bottom = 509.0
+
+[node name="level 6" type="Button" parent="VBoxContainer6"]
+layout_mode = 2
+text = "level 6"
+
+[connection signal="pressed" from="VBoxContainer/backMenu" to="." method="_on_back_menu_pressed"]
+[connection signal="pressed" from="VBoxContainer2/level 1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="VBoxContainer5/level 2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="VBoxContainer4/level 3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="VBoxContainer3/level 4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="VBoxContainer7/level 5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="VBoxContainer6/level 6" to="." method="_on_level_6_pressed"]
