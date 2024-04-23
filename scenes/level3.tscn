@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://ba27hnv4kktvb" path="res://assets/Blue.png" id="1_55msk"]
 [ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://assets/Terrain (16x16).png" id="2_wxa85"]
 [ext_resource type="PackedScene" uid="uid://cjfeoc1304yo2" path="res://scenes/main_characterScale2.tscn" id="3_7malc"]
-[ext_resource type="PackedScene" uid="uid://cqirbhqm5vk2j" path="res://scenes/collectible.tscn" id="4_mjqcb"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45ft3"]
 texture = ExtResource("2_wxa85")
@@ -491,5 +491,4 @@ collision_layer = 3
 [node name="Camera2D2" type="Camera2D" parent="CharacterBody2D2"]
 position = Vector2(4, 0)
 
-[node name="Collectible" parent="." instance=ExtResource("4_mjqcb")]
-position = Vector2(354, 405)
+
