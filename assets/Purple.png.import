@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d306aiyokjja0"
-path="res://.godot/imported/groene prullenbak.png-16c3b7787a994f2c7e92bc2321750296.ctex"
+uid="uid://cifblfxt5bwqg"
+path="res://.godot/imported/Purple.png-0b55b707421e6bc0ea90ca546c4e3551.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://groene prullenbak.png"
-dest_files=["res://.godot/imported/groene prullenbak.png-16c3b7787a994f2c7e92bc2321750296.ctex"]
+source_file="res://assets/Purple.png"
+dest_files=["res://.godot/imported/Purple.png-0b55b707421e6bc0ea90ca546c4e3551.ctex"]
 
 [params]
 

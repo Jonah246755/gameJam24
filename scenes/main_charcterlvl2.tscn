@@ -1,11 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://s6pwk46618bw"]
 
-[ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://Jump (32x32).png" id="1_1600y"]
+[ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://assets/Jump (32x32).png" id="1_1600y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pn1if"]
 size = Vector2(57.5, 80)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+light_mask = 0
+visibility_layer = 0
+collision_mask = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(162, 210)
@@ -13,5 +16,6 @@ scale = Vector2(2.47657, 2.79687)
 texture = ExtResource("1_1600y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visibility_layer = 3
 position = Vector2(163, 216)
 shape = SubResource("RectangleShape2D_pn1if")
