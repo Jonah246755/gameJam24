@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://vvo6if7bnmtn"]
+[gd_scene load_steps=7 format=3 uid="uid://vvo6if7bnmtn"]
 
-[ext_resource type="Texture2D" uid="uid://daf35c8ypdngh" path="res://Brown.png" id="1_mcwa8"]
-[ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://Terrain (16x16).png" id="2_c7ghf"]
+[ext_resource type="Texture2D" uid="uid://daf35c8ypdngh" path="res://assets/Brown.png" id="1_mcwa8"]
+[ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://assets/Terrain (16x16).png" id="2_c7ghf"]
 [ext_resource type="PackedScene" uid="uid://dk3tn71wknoxv" path="res://scenes/main_character.tscn" id="3_wnlhq"]
+[ext_resource type="PackedScene" uid="uid://cqirbhqm5vk2j" path="res://scenes/collectible.tscn" id="4_c3ymm"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n1x75"]
 texture = ExtResource("2_c7ghf")
@@ -540,3 +541,6 @@ layer_0/tile_data = PackedInt32Array(589817, 393216, 4, 589818, 458752, 4, 58981
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_wnlhq")]
 position = Vector2(-330, 247)
+
+[node name="Collectible" parent="." instance=ExtResource("4_c3ymm")]
+position = Vector2(266, 415)

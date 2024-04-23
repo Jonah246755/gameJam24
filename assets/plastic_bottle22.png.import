@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du8sprlqiax43"
-path="res://.godot/imported/plastic bottle.png-7d911e968dae4c4cd3e6c78b7127b026.ctex"
+uid="uid://dhvpewi70mt1a"
+path="res://.godot/imported/plastic_bottle22.png-4f91e17f9df6d77b99e3e0531e75b1b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://plastic bottle.png"
-dest_files=["res://.godot/imported/plastic bottle.png-7d911e968dae4c4cd3e6c78b7127b026.ctex"]
+source_file="res://assets/plastic_bottle22.png"
+dest_files=["res://.godot/imported/plastic_bottle22.png-4f91e17f9df6d77b99e3e0531e75b1b9.ctex"]
 
 [params]
 

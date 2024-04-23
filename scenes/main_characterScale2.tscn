@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjfeoc1304yo2"]
 
-[ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://Jump (32x32).png" id="1_k72j7"]
+[ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://assets/Jump (32x32).png" id="1_k72j7"]
 [ext_resource type="Script" path="res://scenes/main_characterScale2.gd" id="1_q4xiy"]
 [ext_resource type="Script" path="res://scenes/Camera2DofMCS2.gd" id="3_0ser5"]
 
@@ -8,6 +8,7 @@
 size = Vector2(9.33333, 17.1667)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+collision_mask = 3
 script = ExtResource("1_q4xiy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
