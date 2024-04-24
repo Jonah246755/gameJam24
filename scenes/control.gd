@@ -1,11 +1,15 @@
 extends Control
 
+signal move_player(direction)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _on_UpButton_pressed():
+	emit_signal("move_player", Vector2.UP)
 
+func _on_DownButton_pressed():
+	emit_signal("move_player", Vector2.DOWN)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _on_LeftButton_pressed():
+	emit_signal("move_player", Vector2.LEFT)
+
+func _on_RightButton_pressed():
+	emit_signal("move_player", Vector2.RIGHT)
