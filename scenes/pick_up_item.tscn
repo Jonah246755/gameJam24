@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyp17q78s7vu0"]
+
+[ext_resource type="Texture2D" uid="uid://dhvpewi70mt1a" path="res://assets/plastic_bottle22.png" id="1_moa21"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dm8be"]
+
+[node name="PickupDetector" type="Area2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(107, 41)
+shape = SubResource("RectangleShape2D_dm8be")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(111, 40)
+texture = ExtResource("1_moa21")

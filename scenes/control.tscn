@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://jr3wm4vpj58i"]
+[gd_scene load_steps=4 format=3 uid="uid://btri2kh7s5s1e"]
 
-[ext_resource type="Texture2D" uid="uid://bnlj5cvcj3per" path="res://Home Square Button.png" id="1_3ceuk"]
+[ext_resource type="Texture2D" uid="uid://bnlj5cvcj3per" path="res://assets/Home Square Button.png" id="1_3ceuk"]
 
 [sub_resource type="GDScript" id="GDScript_le4tb"]
 script/source = "extends Control

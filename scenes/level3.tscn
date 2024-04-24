@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cdbci4yij5rif"]
+[gd_scene load_steps=7 format=3 uid="uid://b40epqo8o1os1"]
 
 [ext_resource type="Texture2D" uid="uid://ba27hnv4kktvb" path="res://assets/Blue.png" id="1_55msk"]
 [ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://assets/Terrain (16x16).png" id="2_wxa85"]
 [ext_resource type="PackedScene" uid="uid://cjfeoc1304yo2" path="res://scenes/main_characterScale2.tscn" id="3_7malc"]
-[ext_resource type="PackedScene" uid="uid://jr3wm4vpj58i" path="res://scenes/control.tscn" id="4_oncxw"]
+[ext_resource type="PackedScene" uid="uid://btri2kh7s5s1e" path="res://scenes/control.tscn" id="4_oncxw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45ft3"]
 texture = ExtResource("2_wxa85")
