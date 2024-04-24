@@ -1,25 +1,25 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2aasas11386s"]
+[gd_scene load_steps=5 format=3 uid="uid://cr8np8o8mouv2"]
 
 [ext_resource type="Script" path="res://scenes/characterScale1.gd" id="1_v15x2"]
 [ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://assets/Jump (32x32).png" id="2_5kl0k"]
 [ext_resource type="Script" path="res://scenes/Scale1Camera2D.gd" id="3_o3b3a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2w25v"]
-size = Vector2(20, 30)
+size = Vector2(18, 27)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_v15x2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(575, 325)
+position = Vector2(574, 326.5)
 shape = SubResource("RectangleShape2D_2w25v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(574.5, 324)
-scale = Vector2(0.90625, 1)
+position = Vector2(574, 325)
+scale = Vector2(0.875, 0.9375)
 texture = ExtResource("2_5kl0k")
 
 [node name="Camera2D" type="Camera2D" parent="Sprite2D"]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(3, 3)
 script = ExtResource("3_o3b3a")
