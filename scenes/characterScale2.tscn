@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://cgtmukhgey3pr"]
+[gd_scene load_steps=5 format=3 uid="uid://fked8dntysad"]
 
 [ext_resource type="Script" path="res://scenes/characterScale2.gd" id="1_nyd37"]
 [ext_resource type="Texture2D" uid="uid://dui71empj55dq" path="res://assets/Jump (32x32).png" id="2_x2qpx"]
@@ -7,7 +7,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f83vg"]
 size = Vector2(26, 42)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+collision_mask = 3
 script = ExtResource("1_nyd37")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
