@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://dmya0vs45ic44"]
+[gd_scene load_steps=10 format=3 uid="uid://dmya0vs45ic44"]
 
 [ext_resource type="Texture2D" uid="uid://cifblfxt5bwqg" path="res://assets/Purple.png" id="1_akk37"]
 [ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://assets/Terrain (16x16).png" id="2_0oo0n"]
 [ext_resource type="PackedScene" uid="uid://dk3tn71wknoxv" path="res://scenes/main_character.tscn" id="3_s5j0s"]
+[ext_resource type="PackedScene" uid="uid://buh2kw1cik51r" path="res://scenes/Inventory.tscn" id="4_fw644"]
 [ext_resource type="PackedScene" uid="uid://btri2kh7s5s1e" path="res://scenes/control.tscn" id="5_1i47p"]
 [ext_resource type="Script" path="res://scenes/pick_up_item.gd" id="5_31hsg"]
 [ext_resource type="PackedScene" uid="uid://cyp17q78s7vu0" path="res://scenes/pick_up_item.tscn" id="5_oo4y0"]
@@ -494,6 +495,12 @@ layer_0/tile_data = PackedInt32Array(786432, 393216, 8, 786433, 458752, 8, 78643
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_s5j0s")]
 position = Vector2(-358, 193)
+
+[node name="Inventory" parent="." instance=ExtResource("4_fw644")]
+offset_left = -765.0
+offset_top = -5.0
+offset_right = -725.0
+offset_bottom = 36.0
 
 [node name="PickupDetector" parent="." instance=ExtResource("5_oo4y0")]
 position = Vector2(346, 447)

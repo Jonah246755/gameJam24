@@ -5,7 +5,7 @@
 [sub_resource type="GDScript" id="GDScript_le4tb"]
 script/source = "extends Control
 
-
+ 
 
 
 func _on_touch_screen_button_pressed():

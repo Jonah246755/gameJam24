@@ -26,3 +26,25 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+var score = 0  # Player's score
+var inventory  # Reference to the inventory node
+
+func _ready():
+	inventory = Inventory  # Directly access the autoloaded inventory
+
+	# Assuming PickupDetector is a child of the scene's root node, directly accessible from this script's node
+	# Adjust the path as necessary based on your actual scene setup
+	var pickupDetectorPath = "Path/To/PickupDetector"
+	var pickupDetector = get_node_or_null(pickupDetectorPath)
+
+	if pickupDetector:
+		pickupDetector.connect("picked_up", Callable(self, "_on_Trash_picked_up"))
+	else:
+		print("PickupDetector not found at path:", pickupDetectorPath)
+
+
+func _on_Trash_picked_up():
+	score += 1  # Increase score for each trash picked up
+	inventory.add_item("Trash")  # Add trash to inventory
+	print("Trash picked up. Current score: ", score)
