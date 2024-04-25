@@ -17,12 +17,5 @@ func _on_level_3_pressed():
 
 
 func _on_level_4_pressed():
-	get_tree().change_scene_to_file("res://scenes/level1.tscn")
+	get_tree().change_scene_to_file("res://scenes/level4.tscn")
 
-
-func _on_level_5_pressed():
-	get_tree().change_scene_to_file("res://scenes/level1.tscn")
-
-
-func _on_level_6_pressed():
-	get_tree().change_scene_to_file("res://scenes/level1.tscn")
