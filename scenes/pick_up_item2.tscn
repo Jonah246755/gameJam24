@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgdw4nphyc7je"]
+
+[ext_resource type="Texture2D" uid="uid://b5iyjovxjfr76" path="res://assets/banaan.png" id="1_14207"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuijt"]
+size = Vector2(25, 30)
+
+[node name="Area2D" type="Area2D" groups=["Player"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+texture_filter = 1
+position = Vector2(112.5, 75)
+shape = SubResource("RectangleShape2D_wuijt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(112.5, 74.5)
+scale = Vector2(0.82, 0.875)
+texture = ExtResource("1_14207")

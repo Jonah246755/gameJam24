@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://cdbci4yij5rif"]
+[gd_scene load_steps=11 format=3 uid="uid://cdbci4yij5rif"]
 
 [ext_resource type="Texture2D" uid="uid://ba27hnv4kktvb" path="res://assets/Blue.png" id="1_55msk"]
 [ext_resource type="Texture2D" uid="uid://dvu1q1f3t3svj" path="res://assets/Terrain (16x16).png" id="2_wxa85"]
 [ext_resource type="PackedScene" uid="uid://cjfeoc1304yo2" path="res://scenes/main_characterScale2.tscn" id="3_7malc"]
-[ext_resource type="PackedScene" uid="uid://cyp17q78s7vu0" path="res://scenes/pick_up_item.tscn" id="4_3snsc"]
+[ext_resource type="PackedScene" path="res://scenes/pick_up_item.tscn" id="4_3snsc"]
 [ext_resource type="PackedScene" uid="uid://jr3wm4vpj58i" path="res://scenes/control.tscn" id="4_oncxw"]
+[ext_resource type="PackedScene" uid="uid://bgdw4nphyc7je" path="res://scenes/pick_up_item2.tscn" id="5_ngmd2"]
+[ext_resource type="Script" path="res://scenes/pick_up_item.gd" id="6_47q8s"]
+[ext_resource type="Texture2D" uid="uid://d306aiyokjja0" path="res://assets/groene prullenbak.png" id="8_s6oaq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45ft3"]
 texture = ExtResource("2_wxa85")
@@ -493,10 +496,21 @@ collision_layer = 3
 position = Vector2(4, 0)
 
 [node name="PickupDetector" parent="." instance=ExtResource("4_3snsc")]
-position = Vector2(262, 394)
+position = Vector2(261, 399)
+script = ExtResource("6_47q8s")
+
+[node name="Area2D" parent="." instance=ExtResource("5_ngmd2")]
+position = Vector2(834, 360)
+script = ExtResource("6_47q8s")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource("4_oncxw")]
 offset_left = 1.0
 offset_right = -1.0
+
+[node name="GroenePrullenbak" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(236.25, 357.375)
+scale = Vector2(1.9375, 2.45)
+texture = ExtResource("8_s6oaq")

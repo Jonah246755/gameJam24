@@ -5,13 +5,14 @@
 [ext_resource type="Script" path="res://scenes/Scale2Camera2D.gd" id="3_u3go4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f83vg"]
-size = Vector2(26, 42)
+size = Vector2(26, 43)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["Player"]]
+collision_mask = 3
 script = ExtResource("1_nyd37")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(552, 328)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Player"]]
+position = Vector2(552, 328.5)
 shape = SubResource("RectangleShape2D_f83vg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
