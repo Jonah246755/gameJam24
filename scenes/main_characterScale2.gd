@@ -32,7 +32,3 @@ func update_camera_limit_rect(rect):
 		camera.set_limit_rect(rect)
 	else:
 		print("Camera2D node not found.")
-		
-
-
-
