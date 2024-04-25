@@ -4,7 +4,7 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dm8be"]
 
-[node name="PickupDetector" type="Area2D"]
+[node name="PickupDetector" type="Area2D" groups=["Trash"]]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
